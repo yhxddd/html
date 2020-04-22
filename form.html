@@ -1,0 +1,92 @@
+<html>
+<!--
+<head>
+<!--告诉网页用utf-8形式显示字符
+<meta http-equiv="content-type" content="text/html;charset='utf-8'">
+</head>
+-->
+<body>
+表单练习  文本框  选择框 滚动框等<br/><br/>
+<font color='red'>
+&lt;form> 表单范围 &lt;/form><br/>
+输入项：可以输入 或选择的部分 &lt;input type='输入项类型'/><br/>
+form中有一属性action 提交数据的路径 默认到当前路径<br/>
+ form中的method 表示表单提交的格式 get 和 post 默认为get  即 数据会显示到地址栏上 <br/>
+      post 数据不会显示到地址栏上面 <br/>
+form中有enctype 文件上传时使用<br/>
+</font>
+<font size='6' color='blue'>
+每一个输入项都要有name属性值 有name才能提交<br/> 
+必须有value属性值才能读取数据<br/>
+</font>
+
+<form action='实例1.html'>
+<font size='3' color='blue'>提交后 地址栏会读取你所选择的数据<br/></font>
+
+手机号码:<input type='txt' name='phone'/><br/>
+密码：<input type='password' name='pwd'/><br/>
+<br/><br/
+>
+单选输入项:(属性值 name='' 加入后即可进行选择  且 name属性值必须相同)
+<br/>
+性别：
+<input type='radio' name='sex' value='女'/>女 
+<input type='radio' name='sex' value='男'/>男
+<br/>
+默认选中：<br/>
+<input type='radio' name='sex' value='女' checked='checked'/>女<br/>
+
+复选框：(name 值必须相同)<br/>
+爱好：<input type='checkbox' name='love' value='p'/>羽毛球
+<input type='checkbox' name='love' value='basketball'/>篮球
+<input type='checkbox' name='love' value='baseball'/>足球
+<br/>
+默认选中：<br/>
+<input type='checkbox' name='love' value='basketball' checked='checked'/>篮球<br/>
+文件输入项 用于文件上传：
+<input type='file'/><br/>
+
+下拉输入项：不在input中<br/>
+生日：默认选中 selected='selected'  <br/>
+<select name='birth'>
+  <option value='0'>请选择</option>
+  <option value='1999'>1999</option>
+  <option value='1998'>1998</option>
+  <option value='1997'>1997</option>
+  <option value='1996'>1996</option>
+</select>
+<br/>
+
+
+文本域：cols 列  rows 行<br/>
+自我介绍：
+<textarea cols='10' rows=='20' name='text'>
+</textarea>
+<br/>
+
+隐藏项：不会显示在页面上<br/><br/>
+隐藏项：
+<input type='hidden' name='hod'/><br/>
+
+
+提交按钮 value 修改按钮上的字：<br/>
+<input type='submit'/><br/>
+<input type='submit' value='提交'/><br/>
+用图片提交：<br/>
+<input type='image' src='images\photo_02.jpg'/><br/>
+
+重置按钮(回到输入项的初始状态):
+<input type='reset'/><br/>
+
+普通按钮：
+<input type='button' value='普通按钮'/><br/>
+
+多媒体页面：<br/>
+电影：loop:循环数
+<embed src="#" loop="2"/>#=url<br/>
+背景音乐：<bgsound src="#"/>#=wav文件的url<br/>
+
+<i>画线</i>:<hr size="6px" noshade/>
+</form>
+</body>
+</html>

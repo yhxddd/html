@@ -1,0 +1,18 @@
+<html>
+<!-- 如果a.html 含有其他页面（frameset） 则a.html 中不能含有<body>  分割线可以移动--->
+<!-- 基本形式-->
+<!--
+<frameset cols='50%,*'>   <!-- noresize 设置窗口不能改变
+<frame src='a.html' noresize/>
+<frame src='课表.html'/>
+</frameset>
+-->
+
+<!--top 没有图片所以不显示-->
+<frameset rows='20%,*'><!-- rows 按行分 分为上面20%下面80%-->
+<frame src='top.html'/>
+<frameset cols='50%,*'><!-- 下面的80% 按列分 左20%，右80%-->
+<frame src='left.html' noresize />
+<frame src ='right.html' name='myframe'>
+
+</html>
